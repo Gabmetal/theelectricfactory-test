@@ -1,55 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
-	<meta charset="UTF-8">
-	<title>THEF Tech Test</title>
+    <meta charset="UTF-8">
+    <title>Tic Tac Tron</title>
 </head>
 <body>
-	<div>
-		<div>
-			<img src="http://theelectricfactory.com/html/img/logo.png">
-		</div>
-		<div>
-			<ul>
-				<li><a href="#">Inicio</a></li>
-				<li><a href="#">Jugar</a></li>				
-			</ul>
-		</div>		
-	</div>
-	<div>
-		<div class="active">
-			<h1>TA TE TI</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem tempore atque saepe error, nulla esse odio, a porro aperiam ipsam debitis quisquam. Doloribus modi iure dolor rem libero voluptatem soluta architecto reprehenderit nihil veniam delectus, aliquid iusto maxime similique dolore natus consequatur quis magni aut minus, accusantium eos alias? Tempore, sed commodi deserunt ducimus a quibusdam possimus velit ipsum in hic, ipsa delectus. Sit molestiae voluptatem saepe exercitationem, architecto minima quae repellat libero beatae hic veritatis praesentium eius fugiat nam eos reprehenderit, harum officia ex. Ad eaque excepturi optio similique officiis dolore voluptates consequatur, ut dignissimos. Iure hic ad sunt laborum, placeat ipsa ipsam, minima soluta in, blanditiis cum consequuntur quod dignissimos inventore dolore est debitis explicabo fuga quibusdam eaque reiciendis unde fugiat eum. Enim labore optio repudiandae, ab numquam obcaecati perspiciatis quam magni iste ducimus adipisci impedit reiciendis animi veniam. Quia eos incidunt, illo illum impedit molestiae, esse porro repudiandae quae, optio sed facilis, nam debitis earum neque suscipit architecto? Quisquam soluta asperiores impedit, quod sequi a eaque, labore ipsa, perspiciatis exercitationem pariatur vero. Reiciendis quisquam illum fugiat totam, consequuntur culpa. Aut veritatis cumque et quae doloremque, nulla unde facilis autem porro quod provident magni nisi consequatur, nesciunt dolorem!</p>
-		</div>
-		<div>
-			<h1>LOGIN FORM</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem tempore atque saepe error, nulla esse odio, a porro aperiam ipsam debitis quisquam. Doloribus modi iure dolor rem libero voluptatem soluta architecto reprehenderit nihil veniam delectus, aliquid iusto maxime similique dolore natus consequatur quis magni aut minus, accusantium eos alias? Tempore, sed commodi deserunt ducimus a quibusdam possimus velit ipsum in hic, ipsa delectus. Sit molestiae voluptatem saepe exercitationem, architecto minima quae repellat libero beatae hic veritatis praesentium eius fugiat nam eos reprehenderit, harum officia ex.</p>
-			<form>
-				<div><label>Input</label><input type="text"></div>
-				<div><label>Input</label><input type="text"></div>
-				<div><label>Input</label><input type="text"></div>
-				<div><label>Input</label><input type="text"></div>
-				<div><a href="#">Jugar</a></div>
-			</form>
-		</div>
-		<div>
-			<h1>JUEGO</h1>
-			<p>STATUS</p>
-			<div>
-				<div>X</div>
-				<div>0</div>
-				<div>X</div>
-				<div>0</div>
-				<div>X</div>
-				<div>0</div>
-				<div>X</div>
-				<div>0</div>
-				<div>X</div>
-			</div>
-		</div>
-	</div>
-	<div>
-		<p>Catriel Müller</p>		
-	</div>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script language="JavaScript" type="text/javascript" src="jquery-1.11.3.js"></script>
+<script src="JSStyle.js"></script>
+<ul id="menu">
+    Menu
+    <li><div id="newGame">New Game</div></li>
+    <li><div id="reset">Reset</div></li>
+</ul>
+<div id="turn">Turn <span id="turno"></span></div>
+    <div>
+        <table id="board">
+            <tr>
+                <td><button class="box" id="b1"></button></td>
+                <td><button class="box" id="b2"></button></td>
+                <td><button class="box" id="b3"></button></td>
+            </tr>
+            <tr>
+                <td><button class="box" id="b4"></button></td>
+                <td><button class="box" id="b5"></button></td>
+                <td><button class="box" id="b6"></button></td>
+            </tr>
+            <tr>
+                <td><button class="box" id="b7"></button></td>
+                <td><button class="box" id="b8"></button></td>
+                <td><button class="box" id="b9"></button></td>
+            </tr>
+        </table>
+    </div>
+<div id="score">
+    <div id="Player1">Player X WON<br><span id="wonX"></span><br>Time(s)</div>
+    <div id="Player2">Player O WON<br><span id="wonO"></span><br>Time(s)</div>
+</div>
+<div id="win">Player<br><span id="winner"></span><br>WINS</div>
+<audio autoplay loop>
+    <source src="The%20Son%20of%20Flynn.mp3">
+    Your browser does not support the audio.
+</audio>
+<audio id="FX" preload>
+    <source src="xwins.mp3">
+</audio>
+<audio id="FO" preload>
+    <source src="circlewins.mp3">
+</audio>
 </body>
 </html>
