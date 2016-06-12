@@ -5,14 +5,9 @@
     <title>Tic Tac Tron</title>
 </head>
 <body>
-<link rel="stylesheet" type="text/css" href="style.css">
-<script language="JavaScript" type="text/javascript" src="jquery-1.11.3.js"></script>
-<script src="JSStyle.js"></script>
-<ul id="menu">
-    Menu
-    <li><div id="newGame">New Game</div></li>
-    <li><div id="reset">Reset</div></li>
-</ul>
+<link rel="stylesheet" type="text/css" href="./Style/style.css">
+<script language="JavaScript" type="text/javascript" src="./JS/jquery-1.11.3.js"></script>
+<script src="./JS/JSStyle.js"></script>
 <div id="turn">Turn <span id="turno"></span></div>
     <div>
         <table id="board">
@@ -33,20 +28,25 @@
             </tr>
         </table>
     </div>
+<ul id="menu">
+    Menu
+    <li><div id="newGame">New Game</div></li>
+    <li><div id="reset">Reset</div></li>
+</ul>
 <div id="score">
     <div id="Player1">Player X WON<br><span id="wonX"></span><br>Time(s)</div>
     <div id="Player2">Player O WON<br><span id="wonO"></span><br>Time(s)</div>
 </div>
 <div id="win">Player<br><span id="winner"></span><br>WINS</div>
 <audio autoplay loop>
-    <source src="The%20Son%20of%20Flynn.mp3">
+    <source src="./Sounds/The%20Son%20of%20Flynn.mp3">
     Your browser does not support the audio.
 </audio>
 <audio id="FX" preload>
-    <source src="xwins.mp3">
+    <source src="./Sounds/xwins.mp3">
 </audio>
 <audio id="FO" preload>
-    <source src="circlewins.mp3">
+    <source src="./Sounds/circlewins.mp3">
 </audio>
 </body>
 </html>
